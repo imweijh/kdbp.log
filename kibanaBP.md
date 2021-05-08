@@ -40,3 +40,34 @@ timelion BP登录耗时比较图-两融
 ```
 
 
+timelion BP委托耗时比较图-两融
+```
+.es(index="rzrqbp-*",q='"L0303001"',metric='avg:bptime',offset=-7d).label(委托7天前).color(green).yaxis(2), .es(index="rzrqbp-*",q='"L0303001"',metric='avg:bptime').label(委托--耗时).color(blue).yaxis(2),  .es(index="rzrqbp-*",q='L0303001',metric='max:bptime').label(委托--MAX).points().color(red).yaxis(1)
+```
+
+
+timelion BP撤单耗时比较图-两融
+```
+.es(index="rzrqbp-*",q='"L0303002"',metric='avg:bptime',offset=-7d).label(撤单7天前).color(green).yaxis(2), .es(index="rzrqbp-*",q='"L0303002"',metric='avg:bptime').label(撤单--耗时).color(blue).yaxis(2),  .es(index="rzrqbp-*",q='L0303002',metric='max:bptime').label(撤单--MAX).points().color(red).yaxis(1)
+```
+
+
+timelion 融资融券BP登录耗时
+```
+.es(index="rzrqbp-*",q='"L0109101" AND SOURCE_HOST.keyword:rcrzbp-007201B',metric='avg:bptime').label(rcrzbp-007201).color(red).yaxis(2), .es(index="rzrqbp-*",q='"L0109101" AND SOURCE_HOST.keyword:rcrzbp-007202B',metric='avg:bptime').label(rcrzbp-007202).yaxis(2), .es(index="rzrqbp-*",q='"L0109101" AND SOURCE_HOST.keyword:rcrzbp-007203B',metric='avg:bptime').label(rcrzbp-007203).yaxis(2), .es(index="rzrqbp-*",q='"L0109101" AND SOURCE_HOST.keyword:rcrzbp-007204B',metric='avg:bptime').label(rcrzbp-007204).yaxis(2), .es(index="rzrqbp-*",q='"L0109101" AND SOURCE_HOST.keyword:fgrzbp-017201B',metric='avg:bptime').label(fgrzbp-017201).color(navy).yaxis(2), .es(index="rzrqbp-*",q='"L0109101" AND SOURCE_HOST.keyword:fgrzbp-017202B',metric='avg:bptime').label(fgrzbp-017202).yaxis(2), .es(index="rzrqbp-*",q='"L0109101" AND SOURCE_HOST.keyword:fgrzbp-017203B',metric='avg:bptime').label(fgrzbp-017203).yaxis(2), .es(index="rzrqbp-*",q='"L0109101" AND SOURCE_HOST.keyword:fgrzbp-017204B',metric='avg:bptime').label(fgrzbp-017204).yaxis(2),
+```
+
+
+timelion 融资融券BP委托耗时
+```
+.es(index="rzrqbp-*",q='"L0303001" AND SOURCE_HOST.keyword:rcrzbp-007201B',metric='avg:bptime').label(rcrzbp-007201).color(red).yaxis(2), .es(index="rzrqbp-*",q='"L0303001" AND SOURCE_HOST.keyword:rcrzbp-007202B',metric='avg:bptime').label(rcrzbp-007202).yaxis(2), .es(index="rzrqbp-*",q='"L0303001" AND SOURCE_HOST.keyword:rcrzbp-007203B',metric='avg:bptime').label(rcrzbp-007203).yaxis(2), .es(index="rzrqbp-*",q='"L0303001" AND SOURCE_HOST.keyword:rcrzbp-007204B',metric='avg:bptime').label(rcrzbp-007204).yaxis(2), .es(index="rzrqbp-*",q='"L0303001" AND SOURCE_HOST.keyword:fgrzbp-017201B',metric='avg:bptime').label(fgrzbp-017201).color(navy).yaxis(2), .es(index="rzrqbp-*",q='"L0303001" AND SOURCE_HOST.keyword:fgrzbp-017202B',metric='avg:bptime').label(fgrzbp-017202).yaxis(2), .es(index="rzrqbp-*",q='"L0303001" AND SOURCE_HOST.keyword:fgrzbp-017203B',metric='avg:bptime').label(fgrzbp-017203).yaxis(2), .es(index="rzrqbp-*",q='"L0303001" AND SOURCE_HOST.keyword:fgrzbp-017204B',metric='avg:bptime').label(fgrzbp-017204).yaxis(2),
+```
+
+
+timelion 融资融券BP撤单耗时
+```
+.es(index="rzrqbp-*",q='"L0303002" AND SOURCE_HOST.keyword:rcrzbp-007201B',metric='avg:bptime').label(rcrzbp-007201).color(red).yaxis(2), .es(index="rzrqbp-*",q='"L0303002" AND SOURCE_HOST.keyword:rcrzbp-007202B',metric='avg:bptime').label(rcrzbp-007202).yaxis(2), .es(index="rzrqbp-*",q='"L0303002" AND SOURCE_HOST.keyword:rcrzbp-007203B',metric='avg:bptime').label(rcrzbp-007203).yaxis(2), .es(index="rzrqbp-*",q='"L0303002" AND SOURCE_HOST.keyword:rcrzbp-007204B',metric='avg:bptime').label(rcrzbp-007204).yaxis(2), .es(index="rzrqbp-*",q='"L0303002" AND SOURCE_HOST.keyword:fgrzbp-017201B',metric='avg:bptime').label(fgrzbp-017201).color(navy).yaxis(2), .es(index="rzrqbp-*",q='"L0303002" AND SOURCE_HOST.keyword:fgrzbp-017202B',metric='avg:bptime').label(fgrzbp-017202).yaxis(2), .es(index="rzrqbp-*",q='"L0303002" AND SOURCE_HOST.keyword:fgrzbp-017203B',metric='avg:bptime').label(fgrzbp-017203).yaxis(2), .es(index="rzrqbp-*",q='"L0303002" AND SOURCE_HOST.keyword:fgrzbp-017204B',metric='avg:bptime').label(fgrzbp-017204).yaxis(2),
+```
+
+
+
