@@ -3,6 +3,12 @@ BP登录耗时比较图
 .es(index="jzjybp-*",q='"L0409101"',metric='avg:bptime',offset=-7d).label(登录7天前).color(green).yaxis(2), .es(index="jzjybp-*",q='"L0409101"',metric='avg:bptime').label(登录--耗时).color(blue).yaxis(2),   .es(index="jzjybp-*",q='L0409101',metric='max:bptime').label(登录-MAX).points().color(red).yaxis(1)
 ```
 
+BP委托耗时比较图
+```
+.es(index="jzjybp-*",q='"L0303001"',metric='avg:bptime',offset=-7d).label(委托7天前).color(green).yaxis(2), .es(index="jzjybp-*",q='"L0303001"',metric='avg:bptime').label(委托--耗时).color(blue).yaxis(2),  .es(index="jzjybp-*",q='L0303001',metric='max:bptime').label(委托-MAX).points().color(red).yaxis(1)
+```
+
+
 BP登录耗时比较图-两融
 ```
 .es(index="rzrqbp-*",q='"L0109101"',metric='avg:bptime',offset=-7d).label(登录7天前).color(green).yaxis(2), .es(index="rzrqbp-*",q='"L0109101"',metric='avg:bptime').label(登录--耗时).color(blue).yaxis(2),  .es(index="rzrqbp-*",q='L0109101',metric='max:bptime').label(登录--MAX).points().color(red).yaxis(1)
