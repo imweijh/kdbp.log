@@ -1,4 +1,9 @@
 # logstash处理金证BP日志
+给柜台系统安装个X光机，看清系统内部运行细节，快速回答柜台系统以下问题：
+- 哪些功能号调用最多；
+- 登录、委托平均耗时多少，最大耗时多少
+- 哪些BP处理的快哪些慢
+- 哪些BP承载业务多
 
 BP日志公司已统一采集放在kafka，和公司kafka版本能匹配的logstash最高版本是v2.4.1，采用两级logstash模式：
 - 第一级由三台机器四个logstash v2.4.1实例从kafka读取-处理-存入redis；
@@ -30,4 +35,6 @@ watch "redis-cli -p 7379 -n 0 LLEN logstash"
 watch "redis-cli -p 7379 -n 1 LLEN logstash"
 ```
 
+
+![image](https://user-images.githubusercontent.com/23710675/117533269-7302c180-b01e-11eb-86de-eff4b1eafa3a.png)
 
