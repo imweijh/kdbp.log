@@ -38,3 +38,7 @@ watch "redis-cli -p 7379 -n 1 LLEN logstash"
 
 ![image](https://user-images.githubusercontent.com/23710675/117533269-7302c180-b01e-11eb-86de-eff4b1eafa3a.png)
 
+ELK、Elastic Stack、logstash 等是 Elasticsearch BV.公司商标
+https://www.elastic.co/legal/trademarks
+
+
